@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.bootstrap.test.mapper.personMapper">
+     <select id="selectPerson" parameterType="String" resultType="com.bootstrap.test.dto.Person">
+        SELECT *
+        FROM Person 
+        WHERE pid = #{pid}
+     </select>
+     
+     <insert id="insertPerson" parameterType="com.bootstrap.test.dto.Person" useGeneratedKeys="true">
+      INSERT INTO Person (pid, ppw, pname, pemail, pgrade)
+      VALUES (#{pid}, #{ppw}, #{pname},#{pemail}, #{pgrade})
+   </insert> 
+   
+   <update id="updateInfo" parameterType="com.bootstrap.test.dto.Person" >
+      UPDATE Person 
+      SET pname = #{pname}, pemail = #{pemail}
+      WHERE pid = #{pid}
+   </update>
+   
+   <update id="updatePw" parameterType="com.bootstrap.test.dto.Person" >
+      UPDATE Person 
+      SET ppw = #{ppw}
+      WHERE pid = #{pid}
+   </update>
+   
+   <delete id="deletePerson" parameterType="string">
+      DELETE FROM Person
+      WHERE pid = #{pid}
+      
+   </delete>
+  </mapper>

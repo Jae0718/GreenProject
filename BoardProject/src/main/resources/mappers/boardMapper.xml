@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.bootstrap.test.mapper.boardMapper">
+     
+     <select id="selectBoard" parameterType="String" resultType="com.bootstrap.test.dto.Board">
+        SELECT *
+        FROM Board
+     </select>
+     
+     <select id="selectBoardTitle" parameterType="String" resultType="String">
+        SELECT btitle
+        FROM Board
+     </select>
+     
+     <select id="selectBcount" parameterType="int" resultType="int">
+        SELECT bcount
+        FROM Board
+        WHERE bcode=#{bcode}
+     </select>
+     
+     <update id="updateBcount" parameterType="map">
+        UPDATE Board
+        SET bcount = #{ccode}
+        WHERE bcode = #{bcode}
+     </update>
+     
+     <select id="selectBoardCode" parameterType="String" resultType="int">
+        SELECT bcode
+        FROM Board
+        WHERE btitle = #{btitle}
+     </select>
+     
+     <select id="selectContent" parameterType="com.bootstrap.test.pagination.PaginationDto" resultType="com.bootstrap.test.dto.Content">
+        SELECT *
+        FROM Content NATURAL JOIN Person
+        WHERE bcode = (SELECT bcode FROM Board WHERE btitle = #{boardTitle})
+        ORDER BY ccode DESC
+        LIMIT #{startList}, #{listSize}
+     </select>
+     
+     <select id="countContent" parameterType="String" resultType="int">
+        SELECT COUNT(*)
+        FROM Content
+        WHERE bcode = (SELECT bcode FROM Board WHERE btitle = #{btitle})
+     </select>
+     
+     <insert id="insertContent" parameterType="com.bootstrap.test.dto.Content">
+        INSERT INTO Content (ccode, bcode, pcode, pid, ctitle, ccontent, cdate)
+        VALUES (#{ccode}, #{bcode}, #{pcode}, #{pid}, #{ctitle}, #{ccontent}, #{cdate})
+     </insert>
+   
+   <select id="viewContent" parameterType="map" resultType="com.bootstrap.test.dto.Content">
+      SELECT *
+      FROM Content NATURAL JOIN Person
+      WHERE bcode = #{bcode} AND ccode = #{ccode}
+   </select>
+   
+   <update id="updateChits" parameterType="int">
+        UPDATE Content
+        SET chits = #{chits}
+        WHERE ccode = #{ccode}
+     </update>
+     
+   <select id="selectComment" parameterType="int" resultType="list">
+      SELECT *
+      FROM Comment 
+      WHERE bcode = #{bcode}
+   </select>
+   
+   <insert id="insertComment" parameterType="com.bootstrap.test.dto.Comment">
+      INSERT INTO Comment (pid, ccode, cmdate, cmcontent)
+      VALUES (#{pid}, #{ccode}, #{cmdate}, #{cmcontent})
+   </insert>
+
+   <insert id="insertBoard" parameterType="map">
+      INSERT INTO Board (btitle, binfo)
+      VALUES (#{btitle}, #{binfo})
+   </insert>
+   
+   <delete id="deleteBoard" parameterType="String">
+      DELETE FROM Board
+      WHERE btitle = #{btitle}
+   </delete>
+   
+  </mapper>
