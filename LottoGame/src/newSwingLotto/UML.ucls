@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.1.14" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+<class-diagram version="1.2.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="newSwingLotto.ShowPanel" project="05_13" 
     file="/05_13/src/newSwingLotto/ShowPanel.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1468" y="738"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="207" width="233" x="657" y="260"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -12,8 +12,8 @@
   </class>  
   <class id="2" language="java" name="newSwingLotto.ReadyPanel" project="05_13" 
     file="/05_13/src/newSwingLotto/ReadyPanel.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="255" y="685"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="170" width="218" x="335" y="269"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -21,8 +21,8 @@
   </class>  
   <class id="3" language="java" name="newSwingLotto.Result" project="05_13" file="/05_13/src/newSwingLotto/Result.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1175" y="736"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="210" width="250" x="944" y="534"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -30,8 +30,8 @@
   </class>  
   <class id="4" language="java" name="newSwingLotto.ManuPop" project="05_13" 
     file="/05_13/src/newSwingLotto/ManuPop.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="567" y="287"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="190" width="245" x="629" y="535"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -39,8 +39,8 @@
   </class>  
   <class id="5" language="java" name="newSwingLotto.StoreLotto" project="05_13" 
     file="/05_13/src/newSwingLotto/StoreLotto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="848" y="712"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="117" width="239" x="435" y="823"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -48,8 +48,8 @@
   </class>  
   <class id="6" language="java" name="newSwingLotto.Input" project="05_13" file="/05_13/src/newSwingLotto/Input.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="844" y="396"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="173" width="186" x="115" y="538"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -57,83 +57,83 @@
   </class>  
   <class id="7" language="java" name="newSwingLotto.LottoGame" project="05_13" 
     file="/05_13/src/newSwingLotto/LottoGame.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="562" y="707"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="153" width="201" x="347" y="539"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
   <association id="8">    
-    <end type="SOURCE" refId="7" navigable="false">      
+    <end type="SOURCE" refId="3" navigable="false">      
       <attribute id="9" name="stLotto">        
-        <position height="0" width="0" x="0" y="0"/>      
+        <position height="0" width="0" x="-294" y="244"/>      
       </attribute>      
       <multiplicity id="10" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
+        <position height="0" width="0" x="-294" y="244"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="11">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="12" name="showPnlArr">        
-        <position height="0" width="0" x="0" y="0"/>      
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="12" name="stLotto">        
+        <position height="0" width="0" x="-294" y="244"/>      
       </attribute>      
-      <multiplicity id="13" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="14">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="15" name="owner">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="16" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="17">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="18" name="stLotto">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="19" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <multiplicity id="13" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-294" y="244"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="14">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="15" name="rdPnlArr">        
+        <position height="0" width="0" x="290" y="-463"/>      
+      </attribute>      
+      <multiplicity id="16" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="290" y="-463"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="17">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="18" name="owner">        
+        <position height="0" width="0" x="-115" y="1"/>      
+      </attribute>      
+      <multiplicity id="19" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-115" y="1"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="20">    
-    <end type="SOURCE" refId="3" navigable="false">      
+    <end type="SOURCE" refId="4" navigable="false">      
       <attribute id="21" name="stLotto">        
-        <position height="0" width="0" x="0" y="0"/>      
+        <position height="0" width="0" x="-294" y="244"/>      
       </attribute>      
       <multiplicity id="22" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
+        <position height="0" width="0" x="-294" y="244"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="23">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="24" name="rdPnlArr">        
-        <position height="0" width="0" x="0" y="0"/>      
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="24" name="showPnlArr">        
+        <position height="0" width="0" x="-628" y="-517"/>      
       </attribute>      
       <multiplicity id="25" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
+        <position height="0" width="0" x="-628" y="-517"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
