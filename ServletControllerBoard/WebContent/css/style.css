@@ -1,0 +1,41 @@
+	#label1{
+		text-align : center;
+	}
+	.aTag{
+		color:black; 
+		text-decoration:none;
+	}
+	table.templateTable th{
+		background-color: #aad8ff;
+		height: 200px;
+	}
+	
+	table.listTable{
+		width : 800px;
+		border-collapse: collapse;
+   	 	text-align: center;
+    	line-height: 1.5;
+   		margin : auto;
+	}
+	
+	table.listTable td {
+	    width: 500px;
+	    padding: 5px;
+	    vertical-align: top;
+	    border: 1px solid #ccc;
+	}
+	table.listTable th{
+		background-color: #bbdefb;
+	}
+	
+	table.modifyTable{
+		margin : auto;
+	}
+	table.modifyTable th{
+		background-color: #bbdefb;
+	}
+	table.modifyTable td {
+	    padding: 5px;
+	    vertical-align: top;
+	    border: 1px solid #ccc;
+	}
